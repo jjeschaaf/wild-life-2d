@@ -15,7 +15,7 @@
             x:Name="Player"
             Width="50"
             Height="50"
-            Fill="Purple"
+            Fill="Blue"
             Canvas.Left="100"
             Canvas.Top="100"/>
 
