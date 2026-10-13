@@ -11,10 +11,15 @@
 
   <ItemGroup>
     <None Remove="Images\map2map.png" />
+    <None Remove="Images\wildLifeStartScherm1.png.png" />
+    <None Remove="Images\WildLifeStartScherm2.png" />
   </ItemGroup>
 
   <ItemGroup>
     <Resource Include="Images\map2map.png" />
+    <Content Include="Images\WildLifeStartScherm2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
 
 </Project>

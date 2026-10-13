@@ -20,7 +20,7 @@ namespace wpf_1
 
         private void StartButton_Click(object sender, RoutedEventArgs e)
         {
-            Window1 gameWindow = new Window1();
+            GameWindow gameWindow = new GameWindow();
             gameWindow.Show();
 
             this.Close();

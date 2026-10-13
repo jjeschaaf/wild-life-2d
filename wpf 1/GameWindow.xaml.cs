@@ -1,28 +1,30 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Numerics;
 using System.Text;
+using System.Windows;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
 using System.Windows.Documents;
 using System.Windows.Input;
+using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
-
 namespace wpf_1
 {
-    public partial class Window1 : Window
+    public partial class GameWindow : Window
     {
-        public Window1()
+        public GameWindow()
         {
             InitializeComponent();
 
-            KeyDown += Window1_KeyDown;
+            KeyDown += GameWindow_KeyDown;
         }
 
-        private void Window1_KeyDown(object sender, KeyEventArgs e)
+        private void GameWindow_KeyDown(object sender, KeyEventArgs e)
         {
             double x = Canvas.GetLeft(Player);
             double y = Canvas.GetTop(Player);
@@ -47,5 +49,10 @@ namespace wpf_1
                 Canvas.SetTop(Player, y + 10);
             }
         }
+        private void AfsluitenButton_Click(object sender, RoutedEventArgs e)
+        {
+            Application.Current.Shutdown();
+        }
+
     }
 }
